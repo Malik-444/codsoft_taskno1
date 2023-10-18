@@ -1,0 +1,270 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+.links > ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.links > ul > li {
+  list-style: none;
+  text-decoration: none;
+}
+.links > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+.links > ul > li > a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: crimson;
+}
+.links > ul > li > a:focus {
+  color: crimson;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+button {
+  cursor: pointer;
+  padding: 4px 7px;
+  background-color: crimson;
+  border: 2px solid crimson;
+  border-radius: 20px;
+  font-family: cursive;
+  color: white;
+  font-weight: 500;
+}
+button:hover {
+  background-color: white;
+  color: crimson;
+}
+
+/* Hero Section */
+
+section {
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  margin: 0 100px;
+  padding: 10rem 4rem;
+  background-image: url(./Assets/hero_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-weight: 400;
+  font-family: cursive;
+}
+.hero_span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.hero_heading {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 0px;
+  text-align: left !important;
+}
+.hero_p {
+  font-size: 19px;
+  font-weight: 500;
+}
+.booking:hover {
+  background: transparent !important;
+}
+.line {
+  position: absolute;
+  top: 265px;
+  left: 150px;
+  height: 220px;
+  width: 2px;
+  background: crimson;
+}
+
+/* Travel Packages */
+.main-container {
+  margin-top: 20px;
+}
+.main-heading {
+  font-size: 40px;
+  color: crimson;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin-top: 25px;
+  text-align: center;
+}
+.card_container {
+  margin: 20px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 10px;
+}
+.card {
+  /* background-color: aqua; */
+  width: 350px;
+  height: 300px;
+  border: none;
+  border-radius: 20px;
+  position: relative;
+}
+.card > img {
+  width: 350px;
+  height: 300px;
+  border: none;
+  border-radius: 20px;
+}
+.card-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: crimson;
+  font-size: 40px;
+  font-weight: 900;
+  font: bolder;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  margin: 0;
+}
+.card:hover img {
+  opacity: 0.5;
+  transition: 2s all ease-in-out;
+}
+
+.card:hover .card-body {
+  opacity: 1;
+  font-weight: 900;
+  visibility: visible;
+  transition: 1s all ease-in-out;
+}
+.booking:hover {
+  background: transparent !important;
+  transition: all 1s ease-in;
+}
+
+/* Testimonials */
+
+.testimonial_container {
+  margin: 25px 100px;
+}
+h1 {
+  font-size: 40px;
+  color: crimson;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.main-testimonial {
+  display: flex;
+}
+.testimonial {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.testimonial p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.testimonial img {
+  position: absolute;
+  top: -13%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.left {
+  transform: rotateX(60);
+}
+
+/* Contact  */
+.contact_container {
+  margin-bottom: 100px !important;
+  margin: 25px 100px;
+
+}
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(233, 80, 111);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin: 25px 100px;
+  margin-bottom: 0 !important;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer p {
+  font-size: 20px;
+}
+
+.sm_field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.sm_field h3 {
+  font-size: 20px;
+}
+footer .social-media-links {
+  list-style: none;
+  padding: 0;
+}
+
+footer .social-media-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer .social-media-links a {
+  color: #fff;
+  font-size: 20px;
+}
+
+footer .social-media-links a:hover {
+  color: #ccc;
+}
